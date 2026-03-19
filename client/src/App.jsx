@@ -16,6 +16,9 @@ import Arte from './assets/pages/arte/arte.jsx'
 import Vest from './assets/pages/vestimentas/vest.jsx'
 import Celebracoes from './assets/pages/celebracoes/celeb.jsx'
 import Esportes from './assets/pages/esportes/esportes.jsx'
+import Quiz from './assets/pages/quiz/quiz.jsx'
+import Login from './assets/pages/login-cadastro/login.jsx'
+import Cadastro from './assets/pages/login-cadastro/cad.jsx'
 
 function App() {
 
@@ -27,15 +30,15 @@ function App() {
       
       <Routes>
         <Route path ='/' element={<MainContent />} />
-        <Route path ='/login' element={<MainContent />} />
-        <Route path ='/cad' element={<MainContent />} />
+        <Route path ='/login' element={<Login />} />
+        <Route path ='/cad' element={<Cadastro />} />
         <Route path ='/hist' element={<Historia />} />
         <Route path ='/gastro' element={<Gastronomia />} />
         <Route path ='/arte' element={<Arte />} />
         <Route path ='/vest' element={<Vest />} />
         <Route path ='/celeb' element={<Celebracoes />} />
         <Route path ='/esportes' element={<Esportes />} />
-        <Route path ='/quiz' element={<MainContent />} />
+        <Route path ='/quiz' element={<Quiz />} />
       </Routes>
 
       <Footer />
